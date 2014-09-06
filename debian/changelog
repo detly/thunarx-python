@@ -1,4 +1,4 @@
-thunarx-python (0.3.0-1~trusty) trusty; urgency=low
+thunarx-python (0.3.0-1~utopic) utopic; urgency=low
 
   * Initial packaging.
 
