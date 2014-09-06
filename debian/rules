@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ 
+
+override_dh_auto_configure:
+	./autogen.sh
+	./configure --enable-maintainer-mode $(shell dpkg-buildflags --export=configure)
+
+override_dh_auto_install:
+	dh_auto_install
+	find . -name "*.la" -exec rm -fr {} \;
+
+override_dh_makeshlibs:

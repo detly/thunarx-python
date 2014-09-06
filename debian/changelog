@@ -1,0 +1,5 @@
+thunarx-python (0.3.0-1~trusty) trusty; urgency=low
+
+  * Initial packaging.
+
+ -- Jason Heeris <jason.heeris@gmail.com>  Sat, 06 Sep 2014 17:00:00 +1000

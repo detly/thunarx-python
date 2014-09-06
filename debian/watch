@@ -1,0 +1,3 @@
+version=3
+http://git.xfce.org/bindings/thunarx-python/\
+ /bindings/thunarx-python/snapshot/thunarx-python-(.+)\.tar\.bz2

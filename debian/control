@@ -1,0 +1,32 @@
+Source: thunarx-python
+Maintainer: Jason Heeris <jason.heeris@gmail.com>
+Section: xfce
+Priority: optional
+Build-Depends: debhelper (>= 8.0.0),
+               python (>= 2.5),
+               python-dev (>= 2.5),
+               pkg-config,
+               xfce4-dev-tools,
+               autoconf,
+               libtool,
+               gtk-doc-tools,
+               libthunar-vfs-1-dev,
+               libthunarx-2-dev,
+               python-gtk2-dev (>= 2.6.0),
+               python-gtk2 (>= 2.6.0),
+               python-gnome2-dev (>= 2.12.0)
+Standards-Version: 3.9.3
+Homepage: http://goodies.xfce.org/projects/bindings/thunarx-python
+
+Package: thunarx-python
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         ${python:Depends},
+         thunar (>= 0.4.0),
+         python-gtk2 (>= 2.6.0),
+         python-gobject (>= 2.15),
+         python-gnome2 (>= 2.12.0)
+Description: Python bindings for the Thunar file manager
+ Python bindings for the Thunar file manager, allowing property page and menu
+ extensions to be written in Python.
